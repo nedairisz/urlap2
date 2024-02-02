@@ -1,0 +1,43 @@
+body{
+    background-image: -webkit-linear-gradient(70deg, #4d4055 50%, #4f697e  70%);
+    height: 100vh;
+}
+main{
+    width: 80%;
+    background-color: rgb(168, 168, 168);
+    margin: auto;
+    padding: 10px;
+}
+fieldset{
+    background-color: rgb(173, 209, 209);
+    margin: 10px;
+}
+legend{
+    background-color: rgb(87, 87, 109);
+    color: bisque;
+}
+.harmadik{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.elso label{
+    float: left;
+    width: 220px;
+    padding: 5px;
+}
+.elso input{
+    margin: 5px;
+}
+.masodik label{
+    float: left;
+    width: 220px;
+}
+input[type=text]:focus{
+    background-color: rgb(205, 196, 209);
+}
+@media screen and (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
