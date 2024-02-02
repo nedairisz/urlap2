@@ -1,3 +1,7 @@
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: small;
+}
 body{
     background-image: -webkit-linear-gradient(70deg, #4d4055 50%, #4f697e  70%);
     height: 100vh;
@@ -7,14 +11,18 @@ main{
     background-color: rgb(168, 168, 168);
     margin: auto;
     padding: 10px;
+    border-radius: 10px;
 }
 fieldset{
     background-color: rgb(173, 209, 209);
     margin: 10px;
+    border-radius: 10px;
 }
 legend{
     background-color: rgb(87, 87, 109);
     color: bisque;
+    border-radius: 10px;
+    padding: 3px;
 }
 .harmadik{
     display: grid;
@@ -27,17 +35,31 @@ legend{
 }
 .elso input{
     margin: 5px;
+    width: 190px;
+}
+.elso ::placeholder{
+    font-size: smaller;
 }
 .masodik label{
-    float: left;
-    width: 220px;
+    padding-right: 110px
 }
+
 input[type=text]:focus{
-    background-color: rgb(205, 196, 209);
+    background-color: rgb(216, 240, 218);
 }
-@media screen and (max-width: 800px) {
-    main{
-        display: grid;
+input[type=text] {
+    border: 2px solid rgb(75, 134, 40);
+    border-radius: 10px;
+}
+input[type=submit] {
+    background-color: rgb(75, 134, 40);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 756px) {
+    .harmadik{
         grid-template-columns: 1fr;
     }
   }
