@@ -12,13 +12,13 @@
             <legend>regisztráció</legend>
 
             <label for="felhasznnalonev" class="bal">felhasznnálónév</label>
-            <input type="text" class="jobb" id="felhasznnalonev" name="felhasznnalonev" placeholder="csak ekezetmentes betuk"><br>
+            <input type="text" class="jobb" id="felhasznnalonev" name="felhasznnalonev" placeholder="csak ekezetmentes betuk" pattern="[^öüóúőáűéí]"><br>
 
             <label for="jelszo" class="bal">jelszó</label>
-            <input type="text" class="jobb" id="jelszo" name="jelszo" placeholder="min. 3 karakter"><br>
+            <input type="text" class="jobb" id="jelszo" name="jelszo" pattern="[1-3]" placeholder="min. 3 karakter"><br>
 
             <label for="emailcim" class="bal">e-mail cím</label>
-            <input type="text" class="jobb" id="emailcim" name="emailcim" placeholder="vmi@vmi.hu"><br>
+            <input type="text" class="jobb" id="emailcim" name="emailcim" placeholder="vmi@vmi.hu" pattern="^([a-zA-Z][a-zA-Z0-9_]+)@([a-zA-Z0-9_]+)\.hu$"><br>
         </fieldset>
         <fieldset class="masodik">
             <legend>születés</legend>
@@ -51,7 +51,7 @@
                 </div>
             </fieldset>
         </fieldset>
-        <div class="gomb"><input type="submit" value="küldés"></div>
+        <div class="gomb"><input type="submit" value="regisztráció"></div>
     </main>
 </body>
 </html>
